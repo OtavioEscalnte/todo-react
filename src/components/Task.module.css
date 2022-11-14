@@ -1,0 +1,69 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+
+  width: 100%;
+
+  background: var(--gray-500);
+  padding: 1rem;
+  border-radius: 8px;
+  gap: 12px;
+}
+
+.checkBoxRoot {
+  background:transparent;
+  
+  width: 1.125rem;
+  height:1.125rem;
+
+  border: 1px solid var(--purple-dark);
+
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkBoxRoot:hover {
+  filter: brightness(0.8);
+}
+
+
+
+
+.checkBoxRoot .indicator .check {
+  color: var(--gray-100) 
+}
+
+.content {
+  font-size: .875rem;
+}
+
+
+button {
+
+
+  background: transparent;
+  line-height: 0;
+  border: 0;
+  border-radius: 4px;
+  padding:0.5rem;
+
+  transition: 200ms;
+
+  cursor: pointer;
+}
+
+button:hover {
+  padding:0.5rem;
+  background:var(--gray-400);
+}
+
+button:hover .trash {
+  background:var(--gray-400);
+  color: var(--danger);
+}
+
+button .trash {
+  color: var(--gray-300);
+}
